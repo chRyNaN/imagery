@@ -1,4 +1,4 @@
-package com.chrynan.imagery.core
+package com.chrynan.imagery.core.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -7,7 +7,8 @@ import kotlinx.serialization.Serializable
  * Representation of an image that can be accessed via a [uri].
  *
  * @property [uri] The [String] used to access the image resource.
- * @property [mimeType] The MIME Type of this image. For example: `image/png`.
+ * @property [mimeType] The MIME Type of this image. This should take the form of a full MIME Type, for example:
+ * `image/png`, however, there is no guarantee that this is the case.
  * @property [isStatic] Whether this image is a static non-animating image. For instance, an
  * animated GIF is a non-static image, so this would return false.
  * @property [labels] A [List] of [LocalizedText]s representing a localized label, or description, of

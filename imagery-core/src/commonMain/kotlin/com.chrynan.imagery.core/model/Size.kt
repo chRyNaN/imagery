@@ -1,4 +1,4 @@
-package com.chrynan.imagery.core
+package com.chrynan.imagery.core.model
 
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerialName

@@ -1,4 +1,4 @@
-package com.chrynan.imagery.core
+package com.chrynan.imagery.core.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -19,7 +19,7 @@ import kotlinx.serialization.Serializable
  * view bounds. However, we can choose to crop the image using the scaleType property, in this
  * case, using a focal point would be useful so that the cropped image still displays the important
  * part of the image. For this case, we would use the Android ImageView's matrix scaleType and
- * convert this [FocalPoint] to a [Matrix].
+ * convert this [FocalPoint] to a Matrix.
  *
  * @property [x] The coordinate value on the horizontal axis in the two-dimensional plane. This
  * value should be between -1.0f and 1.0f.

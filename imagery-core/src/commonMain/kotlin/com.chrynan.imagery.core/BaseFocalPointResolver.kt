@@ -1,5 +1,7 @@
 package com.chrynan.imagery.core
 
+import com.chrynan.imagery.core.model.FocalPoint
+
 /**
  * Calculates the image matrix needed to maintain the correct cropping for image views based on
  * their focal point.
