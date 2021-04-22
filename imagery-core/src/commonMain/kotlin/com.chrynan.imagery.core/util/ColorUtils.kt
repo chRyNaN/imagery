@@ -2,7 +2,11 @@
 
 package com.chrynan.imagery.core.util
 
+import kotlin.math.floor
+import kotlin.math.min
 import kotlin.math.pow
+import kotlin.math.round
+import kotlin.math.max
 
 internal fun linearToSrgb(value: Float): Int {
     val v = value.coerceIn(0f, 1f)
@@ -42,4 +46,35 @@ internal fun decodeAc(value: Int, maxAc: Float): FloatArray {
         signedPow2((g - 9) / 9.0f) * maxAc,
         signedPow2((b - 9) / 9.0f) * maxAc
     )
+}
+
+internal fun encodeDC(value: FloatArray): Int {
+    val r = linearToSrgb(value[0])
+    val g = linearToSrgb(value[1])
+    val b = linearToSrgb(value[2])
+
+    return (r shl 16) + (g shl 8) + b
+}
+
+internal fun encodeAC(value: FloatArray, maximumValue: Float): Int {
+    val quantR = floor(
+        max(
+            0f,
+            min(18f, floor(signedPow(value[0] / maximumValue, 0.5f) * 9 + 9.5f))
+        )
+    )
+    val quantG = floor(
+        max(
+            0f,
+            min(18f, floor(signedPow(value[1] / maximumValue, 0.5f) * 9 + 9.5f))
+        )
+    )
+    val quantB = floor(
+        max(
+            0f,
+            min(18f, floor(signedPow(value[2] / maximumValue, 0.5f) * 9 + 9.5f))
+        )
+    )
+
+    return round(quantR * 19 * 19 + quantG * 19 + quantB).toInt()
 }

@@ -4,10 +4,10 @@ interface BlurHashEncoder {
 
     suspend fun encode(
         pixels: IntArray,
-        componentX: Int,
-        componentY: Int,
         width: Int,
-        height: Int
+        height: Int,
+        componentX: Int,
+        componentY: Int
     ): String
 
     companion object
@@ -15,10 +15,10 @@ interface BlurHashEncoder {
 
 suspend operator fun BlurHashEncoder.invoke(
     pixels: IntArray,
-    componentX: Int,
-    componentY: Int,
     width: Int,
-    height: Int
+    height: Int,
+    componentX: Int,
+    componentY: Int
 ): String = encode(
     pixels = pixels,
     componentX = componentX,
