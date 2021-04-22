@@ -6,17 +6,17 @@ import kotlinx.serialization.Serializable
 interface BlurHashDecoder {
 
     suspend fun decode(
-        blurHash: String,
+        blurHash: String?,
         width: Int,
         height: Int,
         punch: Float = 1f
-    ): Result
+    ): Result?
 
     @Serializable
     data class Result(
         @SerialName(value = "blur_hash") val blurHash: String,
-        @SerialName(value = "width") val width: Float,
-        @SerialName(value = "height") val height: Float,
+        @SerialName(value = "width") val width: Int,
+        @SerialName(value = "height") val height: Int,
         @SerialName(value = "punch") val punch: Float,
         @SerialName(value = "pixels") val pixels: IntArray,
         @SerialName(value = "component_x") val componentX: Int,
@@ -54,11 +54,11 @@ interface BlurHashDecoder {
 }
 
 suspend operator fun BlurHashDecoder.invoke(
-    blurHash: String,
+    blurHash: String?,
     width: Int,
     height: Int,
     punch: Float = 1f
-): BlurHashDecoder.Result = decode(
+): BlurHashDecoder.Result? = decode(
     blurHash = blurHash,
     width = width,
     height = height,
