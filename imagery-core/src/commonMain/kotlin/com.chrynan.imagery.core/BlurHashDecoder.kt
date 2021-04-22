@@ -1,22 +1,26 @@
 package com.chrynan.imagery.core
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
 interface BlurHashDecoder {
 
     suspend fun decode(
         blurHash: String,
-        width: Float,
-        height: Float,
+        width: Int,
+        height: Int,
         punch: Float = 1f
     ): Result
 
+    @Serializable
     data class Result(
-        val blurHash: String,
-        val width: Float,
-        val height: Float,
-        val punch: Float,
-        val pixels: IntArray,
-        val componentX: Int,
-        val componentY: Int
+        @SerialName(value = "blur_hash") val blurHash: String,
+        @SerialName(value = "width") val width: Float,
+        @SerialName(value = "height") val height: Float,
+        @SerialName(value = "punch") val punch: Float,
+        @SerialName(value = "pixels") val pixels: IntArray,
+        @SerialName(value = "component_x") val componentX: Int,
+        @SerialName(value = "component_y") val componentY: Int
     ) {
 
         override fun equals(other: Any?): Boolean {
@@ -48,3 +52,15 @@ interface BlurHashDecoder {
 
     companion object
 }
+
+suspend operator fun BlurHashDecoder.invoke(
+    blurHash: String,
+    width: Int,
+    height: Int,
+    punch: Float = 1f
+): BlurHashDecoder.Result = decode(
+    blurHash = blurHash,
+    width = width,
+    height = height,
+    punch = punch
+)

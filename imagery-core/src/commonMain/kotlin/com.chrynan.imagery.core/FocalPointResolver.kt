@@ -1,5 +1,8 @@
 package com.chrynan.imagery.core
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
 interface FocalPointResolver {
 
     suspend fun resolve(
@@ -10,16 +13,31 @@ interface FocalPointResolver {
         focalPoint: FocalPoint
     ): Result
 
+    @Serializable
     data class Result(
-        val scale: Float,
-        val dx: Float,
-        val dy: Float,
-        val viewWidth: Float,
-        val viewHeight: Float,
-        val imageWidth: Float,
-        val imageHeight: Float,
-        val focalPoint: FocalPoint
+        @SerialName(value = "scale") val scale: Float,
+        @SerialName(value = "dx") val dx: Float,
+        @SerialName(value = "dy") val dy: Float,
+        @SerialName(value = "view_width") val viewWidth: Float,
+        @SerialName(value = "view_height") val viewHeight: Float,
+        @SerialName(value = "image_width") val imageWidth: Float,
+        @SerialName(value = "image_height") val imageHeight: Float,
+        @SerialName(value = "focal_point") val focalPoint: FocalPoint
     )
 
     companion object
 }
+
+suspend operator fun FocalPointResolver.invoke(
+    viewWidth: Float,
+    viewHeight: Float,
+    imageWidth: Float,
+    imageHeight: Float,
+    focalPoint: FocalPoint
+): FocalPointResolver.Result = resolve(
+    viewWidth = viewWidth,
+    viewHeight = viewHeight,
+    imageWidth = imageWidth,
+    imageHeight = imageHeight,
+    focalPoint = focalPoint
+)
