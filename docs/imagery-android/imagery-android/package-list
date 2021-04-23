@@ -1,0 +1,12 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.chrynan.imagery.android////PointingToDeclaration/imagery-android/com.chrynan.imagery.android/index.md
+$dokka.location:com.chrynan.imagery.android//createBitmap/#com.chrynan.imagery.core.BlurHashDecoder.Result/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/create-bitmap.md
+$dokka.location:com.chrynan.imagery.android//decodeToBitmap/com.chrynan.imagery.core.BlurHashDecoder#kotlin.String?#kotlin.Int#kotlin.Int#kotlin.Float/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/decode-to-bitmap.md
+$dokka.location:com.chrynan.imagery.android//encode/com.chrynan.imagery.core.BlurHashEncoder#android.graphics.Bitmap#kotlin.Int#kotlin.Int/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/encode.md
+$dokka.location:com.chrynan.imagery.android//resolveToMatrix/com.chrynan.imagery.core.FocalPointResolver#kotlin.Float#kotlin.Float#kotlin.Float#kotlin.Float#com.chrynan.imagery.core.model.FocalPoint/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/resolve-to-matrix.md
+$dokka.location:com.chrynan.imagery.android//setToFocalPointResult/android.graphics.Matrix#com.chrynan.imagery.core.FocalPointResolver.Result/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/set-to-focal-point-result.md
+$dokka.location:com.chrynan.imagery.android//toBitmap/com.chrynan.imagery.core.BlurHashDecoder.Result#/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/to-bitmap.md
+$dokka.location:com.chrynan.imagery.android//toMatrix/com.chrynan.imagery.core.FocalPointResolver.Result#/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/to-matrix.md
+com.chrynan.imagery.android
+

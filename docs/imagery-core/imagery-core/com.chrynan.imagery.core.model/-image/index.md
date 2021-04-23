@@ -1,0 +1,42 @@
+//[imagery-core](../../../index.md)/[com.chrynan.imagery.core.model](../index.md)/[Image](index.md)
+
+
+
+# Image  
+ [common] data class [Image](index.md)(**uri**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **mimeType**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **isStatic**: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), **labels**: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[LocalizedText](../-localized-text/index.md)>?, **accessibilityDescriptions**: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[LocalizedText](../-localized-text/index.md)>?, **blurHash**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?, **focalPoint**: [FocalPoint](../-focal-point/index.md)?, **size**: [Size](../-size/index.md)?, **aspectRatio**: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)?, **density**: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)?, **orientation**: [ImageOrientation](../-image-orientation/index.md)?)
+
+Representation of an image that can be accessed via a [uri](uri.md).
+
+   
+
+
+## Constructors  
+  
+| | |
+|---|---|
+| <a name="com.chrynan.imagery.core.model/Image/Image/#kotlin.String#kotlin.String?#kotlin.Boolean#kotlin.collections.List[com.chrynan.imagery.core.model.LocalizedText]?#kotlin.collections.List[com.chrynan.imagery.core.model.LocalizedText]?#kotlin.String?#com.chrynan.imagery.core.model.FocalPoint?#com.chrynan.imagery.core.model.Size?#kotlin.Float?#kotlin.Float?#com.chrynan.imagery.core.model.ImageOrientation?/PointingToDeclaration/"></a>[Image](-image.md)| <a name="com.chrynan.imagery.core.model/Image/Image/#kotlin.String#kotlin.String?#kotlin.Boolean#kotlin.collections.List[com.chrynan.imagery.core.model.LocalizedText]?#kotlin.collections.List[com.chrynan.imagery.core.model.LocalizedText]?#kotlin.String?#com.chrynan.imagery.core.model.FocalPoint?#com.chrynan.imagery.core.model.Size?#kotlin.Float?#kotlin.Float?#com.chrynan.imagery.core.model.ImageOrientation?/PointingToDeclaration/"></a> [common] fun [Image](-image.md)(uri: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), mimeType: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, isStatic: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true, labels: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[LocalizedText](../-localized-text/index.md)>? = null, accessibilityDescriptions: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[LocalizedText](../-localized-text/index.md)>? = null, blurHash: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = null, focalPoint: [FocalPoint](../-focal-point/index.md)? = null, size: [Size](../-size/index.md)? = null, aspectRatio: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)? = null, density: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)? = null, orientation: [ImageOrientation](../-image-orientation/index.md)? = null)   <br>|
+
+
+## Types  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="com.chrynan.imagery.core.model/Image.Companion///PointingToDeclaration/"></a>[Companion](-companion/index.md)| <a name="com.chrynan.imagery.core.model/Image.Companion///PointingToDeclaration/"></a>[common]  <br>Content  <br>object [Companion](-companion/index.md)  <br><br><br>|
+
+
+## Properties  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="com.chrynan.imagery.core.model/Image/accessibilityDescriptions/#/PointingToDeclaration/"></a>[accessibilityDescriptions](accessibility-descriptions.md)| <a name="com.chrynan.imagery.core.model/Image/accessibilityDescriptions/#/PointingToDeclaration/"></a> [common] val [accessibilityDescriptions](accessibility-descriptions.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[LocalizedText](../-localized-text/index.md)>? = nullA [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html) of [LocalizedText](../-localized-text/index.md)s representing useful descriptions of this image that can be used for accessibility means, such as screen readers.   <br>|
+| <a name="com.chrynan.imagery.core.model/Image/aspectRatio/#/PointingToDeclaration/"></a>[aspectRatio](aspect-ratio.md)| <a name="com.chrynan.imagery.core.model/Image/aspectRatio/#/PointingToDeclaration/"></a> [common] val [aspectRatio](aspect-ratio.md): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)? = nullThe aspect ratio of the image.   <br>|
+| <a name="com.chrynan.imagery.core.model/Image/blurHash/#/PointingToDeclaration/"></a>[blurHash](blur-hash.md)| <a name="com.chrynan.imagery.core.model/Image/blurHash/#/PointingToDeclaration/"></a> [common] val [blurHash](blur-hash.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = nullA blur hash [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) value used as a placeholder while the image is being loaded.   <br>|
+| <a name="com.chrynan.imagery.core.model/Image/density/#/PointingToDeclaration/"></a>[density](density.md)| <a name="com.chrynan.imagery.core.model/Image/density/#/PointingToDeclaration/"></a> [common] val [density](density.md): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)? = nullThe original or desired pixels per inch (PPI) density for the image.   <br>|
+| <a name="com.chrynan.imagery.core.model/Image/focalPoint/#/PointingToDeclaration/"></a>[focalPoint](focal-point.md)| <a name="com.chrynan.imagery.core.model/Image/focalPoint/#/PointingToDeclaration/"></a> [common] val [focalPoint](focal-point.md): [FocalPoint](../-focal-point/index.md)? = nullThe [FocalPoint](../-focal-point/index.md), or area of importance, in the image.   <br>|
+| <a name="com.chrynan.imagery.core.model/Image/isStatic/#/PointingToDeclaration/"></a>[isStatic](is-static.md)| <a name="com.chrynan.imagery.core.model/Image/isStatic/#/PointingToDeclaration/"></a> [common] val [isStatic](is-static.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = trueWhether this image is a static non-animating image.   <br>|
+| <a name="com.chrynan.imagery.core.model/Image/labels/#/PointingToDeclaration/"></a>[labels](labels.md)| <a name="com.chrynan.imagery.core.model/Image/labels/#/PointingToDeclaration/"></a> [common] val [labels](labels.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)<[LocalizedText](../-localized-text/index.md)>? = nullA [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html) of [LocalizedText](../-localized-text/index.md)s representing a localized label, or description, of this image.   <br>|
+| <a name="com.chrynan.imagery.core.model/Image/mimeType/#/PointingToDeclaration/"></a>[mimeType](mime-type.md)| <a name="com.chrynan.imagery.core.model/Image/mimeType/#/PointingToDeclaration/"></a> [common] val [mimeType](mime-type.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? = nullThe MIME Type of this image.   <br>|
+| <a name="com.chrynan.imagery.core.model/Image/orientation/#/PointingToDeclaration/"></a>[orientation](orientation.md)| <a name="com.chrynan.imagery.core.model/Image/orientation/#/PointingToDeclaration/"></a> [common] val [orientation](orientation.md): [ImageOrientation](../-image-orientation/index.md)? = nullThe [ImageOrientation](../-image-orientation/index.md) of this image.   <br>|
+| <a name="com.chrynan.imagery.core.model/Image/size/#/PointingToDeclaration/"></a>[size](size.md)| <a name="com.chrynan.imagery.core.model/Image/size/#/PointingToDeclaration/"></a> [common] val [size](size.md): [Size](../-size/index.md)? = nullThe size of this image.   <br>|
+| <a name="com.chrynan.imagery.core.model/Image/uri/#/PointingToDeclaration/"></a>[uri](uri.md)| <a name="com.chrynan.imagery.core.model/Image/uri/#/PointingToDeclaration/"></a> [common] val [uri](uri.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)The [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) used to access the image resource.   <br>|
+
