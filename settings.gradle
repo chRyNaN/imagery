@@ -1,5 +1,6 @@
 rootProject.name = "imagery"
 
 include ":imagery-core"
+include ":imagery-android"
 
 enableFeaturePreview("GRADLE_METADATA")
