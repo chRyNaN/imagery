@@ -1,4 +1,8 @@
+@file:Suppress("unused")
+
 package com.chrynan.imagery.core
+
+import kotlin.js.JsName
 
 interface BlurHashEncoder {
 
@@ -26,3 +30,6 @@ suspend operator fun BlurHashEncoder.invoke(
     width = width,
     height = height
 )
+
+@JsName("createBlurHashEncoder")
+fun BlurHashEncoder(): BlurHashEncoder = BaseBlurHashEncoder()

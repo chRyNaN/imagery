@@ -1,7 +1,10 @@
+@file:Suppress("unused")
+
 package com.chrynan.imagery.core
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import kotlin.js.JsName
 
 interface BlurHashDecoder {
 
@@ -49,8 +52,6 @@ interface BlurHashDecoder {
             return result
         }
     }
-
-    companion object
 }
 
 suspend operator fun BlurHashDecoder.invoke(
@@ -64,3 +65,6 @@ suspend operator fun BlurHashDecoder.invoke(
     height = height,
     punch = punch
 )
+
+@JsName("createBlurHashDecoder")
+fun BlurHashDecoder(): BlurHashDecoder = BaseBlurHashDecoder()

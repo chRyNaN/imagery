@@ -7,7 +7,7 @@ import com.chrynan.imagery.core.util.linearToSrgb
 import kotlin.math.PI
 import kotlin.math.cos
 
-class BaseBlurHashDecoder : BlurHashDecoder {
+internal class BaseBlurHashDecoder : BlurHashDecoder {
 
     override suspend fun decode(blurHash: String?, width: Int, height: Int, punch: Float): BlurHashDecoder.Result? {
         require(width > 0) { "Width must be greater than zero." }

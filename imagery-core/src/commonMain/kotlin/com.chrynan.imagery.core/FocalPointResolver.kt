@@ -3,6 +3,7 @@ package com.chrynan.imagery.core
 import com.chrynan.imagery.core.model.FocalPoint
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import kotlin.js.JsName
 
 interface FocalPointResolver {
 
@@ -42,3 +43,6 @@ suspend operator fun FocalPointResolver.invoke(
     imageHeight = imageHeight,
     focalPoint = focalPoint
 )
+
+@JsName("createFocalPointResolver")
+fun FocalPointResolver(): FocalPointResolver = BaseFocalPointResolver()

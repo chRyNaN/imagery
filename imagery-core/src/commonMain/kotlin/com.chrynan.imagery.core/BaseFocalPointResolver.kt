@@ -13,7 +13,7 @@ import com.chrynan.imagery.core.model.FocalPoint
  * @see [The explanation of focal points](https://github.com/jonom/jquery-focuspoint#1-calculate-your-images-focus-point)
  * @see [This was extracted and adapted from the Tusky App Source Code](https://github.com/tuskyapp/Tusky)
  */
-class BaseFocalPointResolver : FocalPointResolver {
+internal class BaseFocalPointResolver : FocalPointResolver {
 
     /**
      * Update the given matrix for the given parameters.

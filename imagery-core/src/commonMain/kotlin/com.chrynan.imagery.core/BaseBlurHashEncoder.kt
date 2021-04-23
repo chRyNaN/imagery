@@ -7,7 +7,7 @@ import com.chrynan.imagery.core.util.encodeDC
 import com.chrynan.imagery.core.util.max
 import kotlin.math.*
 
-class BaseBlurHashEncoder : BlurHashEncoder {
+internal class BaseBlurHashEncoder : BlurHashEncoder {
 
     override suspend fun encode(pixels: IntArray, width: Int, height: Int, componentX: Int, componentY: Int): String {
         require(!(componentX < 1 || componentX > 9 || componentY < 1 || componentY > 9)) { "Blur hash must have between 1 and 9 components." }
