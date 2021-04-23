@@ -4,6 +4,9 @@ package com.chrynan.imagery.core
 
 import kotlin.js.JsName
 
+/**
+ * A utility that converts an array of pixel data to a BlurHash [String].
+ */
 interface BlurHashEncoder {
 
     suspend fun encode(
@@ -31,5 +34,8 @@ suspend operator fun BlurHashEncoder.invoke(
     height = height
 )
 
+/**
+ * Creates an instance of a [BlurHashEncoder].
+ */
 @JsName("createBlurHashEncoder")
 fun BlurHashEncoder(): BlurHashEncoder = BaseBlurHashEncoder()

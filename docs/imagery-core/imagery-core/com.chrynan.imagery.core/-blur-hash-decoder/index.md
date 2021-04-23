@@ -3,14 +3,18 @@
 
 
 # BlurHashDecoder  
- [common] interface [BlurHashDecoder](index.md)   
+ [common] interface [BlurHashDecoder](index.md)
+
+A utility that can decode a BlurHash [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) into a [Result](-result/index.md) object that contains information on how to render the BlurHash image to the screen.
+
+   
 
 
 ## Types  
   
 |  Name |  Summary | 
 |---|---|
-| <a name="com.chrynan.imagery.core/BlurHashDecoder.Result///PointingToDeclaration/"></a>[Result](-result/index.md)| <a name="com.chrynan.imagery.core/BlurHashDecoder.Result///PointingToDeclaration/"></a>[common]  <br>Content  <br>data class [Result](-result/index.md)(**blurHash**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **width**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **height**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **punch**: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html), **pixels**: [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html), **componentX**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **componentY**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  <br><br><br>|
+| <a name="com.chrynan.imagery.core/BlurHashDecoder.Result///PointingToDeclaration/"></a>[Result](-result/index.md)| <a name="com.chrynan.imagery.core/BlurHashDecoder.Result///PointingToDeclaration/"></a>[common]  <br>Content  <br>data class [Result](-result/index.md)(**blurHash**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **width**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **height**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **punch**: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html), **pixels**: [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html), **componentX**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **componentY**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  <br>More info  <br>A class that is returned as a result of the [decode](decode.md) function.  <br><br><br>|
 
 
 ## Functions  

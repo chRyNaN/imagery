@@ -6,6 +6,12 @@
 [common]  
 Content  
 fun [BlurHashEncoder](-blur-hash-encoder.md)(): [BlurHashEncoder](-blur-hash-encoder/index.md)  
+More info  
+
+
+Creates an instance of a [BlurHashEncoder](-blur-hash-encoder/index.md).
+
+  
 
 
 

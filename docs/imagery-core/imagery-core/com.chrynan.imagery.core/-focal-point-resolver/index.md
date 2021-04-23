@@ -3,7 +3,11 @@
 
 
 # FocalPointResolver  
- [common] interface [FocalPointResolver](index.md)   
+ [common] interface [FocalPointResolver](index.md)
+
+A utility that can calculate a [Result](-result/index.md) from a [FocalPoint](../../com.chrynan.imagery.core.model/-focal-point/index.md), which is used to determine the portion of the image to display.
+
+   
 
 
 ## Types  

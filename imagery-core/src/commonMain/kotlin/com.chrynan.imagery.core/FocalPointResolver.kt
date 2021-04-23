@@ -5,6 +5,10 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlin.js.JsName
 
+/**
+ * A utility that can calculate a [Result] from a [FocalPoint], which is used to determine the
+ * portion of the image to display.
+ */
 interface FocalPointResolver {
 
     suspend fun resolve(
@@ -44,5 +48,8 @@ suspend operator fun FocalPointResolver.invoke(
     focalPoint = focalPoint
 )
 
+/**
+ * Creates an instance of a [FocalPointResolver].
+ */
 @JsName("createFocalPointResolver")
 fun FocalPointResolver(): FocalPointResolver = BaseFocalPointResolver()

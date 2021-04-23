@@ -3,7 +3,11 @@
 
 
 # BlurHashEncoder  
- [common] interface [BlurHashEncoder](index.md)   
+ [common] interface [BlurHashEncoder](index.md)
+
+A utility that converts an array of pixel data to a BlurHash [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html).
+
+   
 
 
 ## Types  

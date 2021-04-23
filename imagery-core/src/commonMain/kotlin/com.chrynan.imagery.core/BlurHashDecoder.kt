@@ -6,6 +6,10 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlin.js.JsName
 
+/**
+ * A utility that can decode a BlurHash [String] into a [Result] object that contains information
+ * on how to render the BlurHash image to the screen.
+ */
 interface BlurHashDecoder {
 
     suspend fun decode(
@@ -15,6 +19,10 @@ interface BlurHashDecoder {
         punch: Float = 1f
     ): Result?
 
+    /**
+     * A class that is returned as a result of the [decode] function. This class contains
+     * everything necessary for rendering a BlurHash to the screen as an image.
+     */
     @Serializable
     data class Result(
         @SerialName(value = "blur_hash") val blurHash: String,
@@ -66,5 +74,8 @@ suspend operator fun BlurHashDecoder.invoke(
     punch = punch
 )
 
+/**
+ * Creates an instance of a [BlurHashDecoder].
+ */
 @JsName("createBlurHashDecoder")
 fun BlurHashDecoder(): BlurHashDecoder = BaseBlurHashDecoder()

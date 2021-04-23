@@ -3,7 +3,18 @@
 
 
 # Result  
- [common] data class [Result](index.md)(**blurHash**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **width**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **height**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **punch**: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html), **pixels**: [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html), **componentX**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **componentY**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))   
+ [common] data class [Result](index.md)(**blurHash**: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), **width**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **height**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **punch**: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html), **pixels**: [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html), **componentX**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), **componentY**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+
+A class that is returned as a result of the [decode](../decode.md) function. This class contains everything necessary for rendering a BlurHash to the screen as an image.
+
+   
+
+
+## Constructors  
+  
+| | |
+|---|---|
+| <a name="com.chrynan.imagery.core/BlurHashDecoder.Result/Result/#kotlin.String#kotlin.Int#kotlin.Int#kotlin.Float#kotlin.IntArray#kotlin.Int#kotlin.Int/PointingToDeclaration/"></a>[Result](-result.md)| <a name="com.chrynan.imagery.core/BlurHashDecoder.Result/Result/#kotlin.String#kotlin.Int#kotlin.Int#kotlin.Float#kotlin.IntArray#kotlin.Int#kotlin.Int/PointingToDeclaration/"></a> [common] fun [Result](-result.md)(blurHash: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), width: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), height: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), punch: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html), pixels: [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html), componentX: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), componentY: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))   <br>|
 
 
 ## Functions  

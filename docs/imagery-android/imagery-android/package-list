@@ -1,6 +1,7 @@
 $dokka.format:gfm-v1
 $dokka.linkExtension:md
 $dokka.location:com.chrynan.imagery.android////PointingToDeclaration/imagery-android/com.chrynan.imagery.android/index.md
+$dokka.location:com.chrynan.imagery.android//UriMimeTypeResolver/#android.content.Context/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/-uri-mime-type-resolver.md
 $dokka.location:com.chrynan.imagery.android//createBitmap/#com.chrynan.imagery.core.BlurHashDecoder.Result/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/create-bitmap.md
 $dokka.location:com.chrynan.imagery.android//decodeToBitmap/com.chrynan.imagery.core.BlurHashDecoder#kotlin.String?#kotlin.Int#kotlin.Int#kotlin.Float/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/decode-to-bitmap.md
 $dokka.location:com.chrynan.imagery.android//encode/com.chrynan.imagery.core.BlurHashEncoder#android.graphics.Bitmap#kotlin.Int#kotlin.Int/PointingToDeclaration/imagery-android/com.chrynan.imagery.android/encode.md
