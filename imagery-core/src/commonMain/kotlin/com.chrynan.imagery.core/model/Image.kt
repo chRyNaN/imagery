@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package com.chrynan.imagery.core.model
 
 import kotlinx.serialization.SerialName
