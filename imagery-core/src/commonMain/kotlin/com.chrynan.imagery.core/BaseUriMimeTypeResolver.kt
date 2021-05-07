@@ -3,7 +3,8 @@ package com.chrynan.imagery.core
 abstract class BaseUriMimeTypeResolver : UriMimeTypeResolver {
 
     private val supportedVideoTypes = listOf(".3gp", ".mkv", ".mp4", ".ts", ".webm", ".gifv")
-    private val supportedImageTypes = listOf(".png", ".webp", ".jpg", ".jpeg", ".bmp", ".gif")
+    private val supportedImageTypes =
+        listOf(".png", ".webp", ".jpg", ".jpeg", ".bmp", ".gif", "android+vector+xml")
     private val supportedAudioTypes = listOf(".flav", ".flv", ".mp3")
 
     private fun createImageMimeType(fileSuffix: String) =
