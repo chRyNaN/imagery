@@ -9,6 +9,7 @@ import kotlinx.serialization.Serializable
  * Representation of an image that can be accessed via a [uri].
  *
  * @property [uri] The [String] used to access the image resource.
+ * @property [name] The optional name of the image.
  * @property [mimeType] The MIME Type of this image. This should take the form of a full MIME Type, for example:
  * `image/png`, however, there is no guarantee that this is the case.
  * @property [isStatic] Whether this image is a static non-animating image. For instance, an
@@ -35,6 +36,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Image(
     @SerialName(value = "uri") val uri: String,
+    @SerialName(value = "name") val name: String? = null,
     @SerialName(value = "mime_type") val mimeType: String? = null,
     @SerialName(value = "is_static") val isStatic: Boolean = true,
     @SerialName(value = "labels") val labels: List<LocalizedText>? = null,
