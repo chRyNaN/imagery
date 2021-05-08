@@ -9,6 +9,9 @@ import kotlinx.serialization.Serializable
  * An enum class that indicates the orientation of an image.
  *
  * Possible values are [PORTRAIT], [LANDSCAPE], [SQUARE], and [UNDEFINED].
+ *
+ * @see [Image.orientation]
+ * @see [Image.displayOrientation]
  */
 @Serializable
 enum class ImageOrientation(val typeName: String) {

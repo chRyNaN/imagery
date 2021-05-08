@@ -83,6 +83,25 @@ result.dx
 result.dy
 ```
 
+### ImageCreator
+
+An `ImageCreator` can be used to create instances of an `Image`, including all of its data, such as the Blur Hash, in a single function call.
+
+```kotlin
+val imageCreator = ImageCreator(blurHashEncoder, uriMimeTypeResolver)
+
+val image = imageCreator.create(
+        uri,
+        width,
+        height,
+        pixels,
+        blurHashComponentX,
+        blurHashComponentY,
+        focalPointX,
+        focalPointY
+)
+```
+
 ## Building the library
 
 The library is provided through [Repsy.io](https://repsy.io). Checkout
