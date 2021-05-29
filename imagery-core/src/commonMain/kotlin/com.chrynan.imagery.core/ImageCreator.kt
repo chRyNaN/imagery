@@ -31,6 +31,8 @@ interface ImageCreator {
         focalPointX: Float,
         focalPointY: Float
     ): Image
+
+    companion object
 }
 
 /**
@@ -139,8 +141,10 @@ suspend operator fun ImageCreator.invoke(
  */
 fun ImageCreator(
     blurHashEncoder: BlurHashEncoder = BlurHashEncoder(),
-    uriMimeTypeResolver: UriMimeTypeResolver
+    uriMimeTypeResolver: UriMimeTypeResolver,
+    metadataResolver: MetadataResolver? = null
 ): ImageCreator = BaseImageCreator(
     blurHashEncoder = blurHashEncoder,
-    uriMimeTypeResolver = uriMimeTypeResolver
+    uriMimeTypeResolver = uriMimeTypeResolver,
+    metadataResolver = metadataResolver
 )

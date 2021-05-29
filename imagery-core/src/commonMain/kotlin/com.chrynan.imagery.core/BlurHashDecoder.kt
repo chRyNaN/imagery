@@ -60,6 +60,8 @@ interface BlurHashDecoder {
             return result
         }
     }
+
+    companion object
 }
 
 suspend operator fun BlurHashDecoder.invoke(

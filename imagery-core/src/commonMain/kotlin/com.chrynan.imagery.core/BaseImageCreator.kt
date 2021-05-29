@@ -6,7 +6,8 @@ import kotlinx.coroutines.coroutineScope
 
 internal class BaseImageCreator(
     private val blurHashEncoder: BlurHashEncoder = BlurHashEncoder(),
-    private val uriMimeTypeResolver: UriMimeTypeResolver
+    private val uriMimeTypeResolver: UriMimeTypeResolver,
+    private val metadataResolver: MetadataResolver? = null
 ) : ImageCreator {
 
     override suspend fun create(
@@ -47,6 +48,8 @@ internal class BaseImageCreator(
 
         val resolvedMimeType = mimeType ?: uriMimeTypeResolver.resolve(uri = uri)
 
+        val metadata = metadataResolver?.resolve(uri = uri, mimeType = resolvedMimeType)
+
         Image(
             uri = uri,
             name = name,
@@ -58,7 +61,8 @@ internal class BaseImageCreator(
             density = density,
             size = Size(width = width, height = height),
             focalPoint = focalPoint,
-            blurHash = deferredBlurHash.await()
+            blurHash = deferredBlurHash.await(),
+            metadata = metadata
         )
     }
 }

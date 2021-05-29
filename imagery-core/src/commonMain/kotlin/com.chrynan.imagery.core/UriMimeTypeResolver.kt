@@ -12,6 +12,8 @@ interface UriMimeTypeResolver {
      * Type could be resolved.
      */
     suspend fun resolve(uri: String): String?
+
+    companion object
 }
 
 suspend operator fun UriMimeTypeResolver.invoke(uri: String): String? = resolve(uri = uri)
