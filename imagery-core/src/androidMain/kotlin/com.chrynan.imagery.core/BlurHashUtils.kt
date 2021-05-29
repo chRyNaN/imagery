@@ -1,10 +1,8 @@
 @file:Suppress("unused")
 
-package com.chrynan.imagery.android
+package com.chrynan.imagery.core
 
 import android.graphics.Bitmap
-import com.chrynan.imagery.core.BlurHashDecoder
-import com.chrynan.imagery.core.BlurHashEncoder
 
 fun createBitmap(result: BlurHashDecoder.Result): Bitmap =
     Bitmap.createBitmap(result.pixels, result.width, result.height, Bitmap.Config.ARGB_8888)

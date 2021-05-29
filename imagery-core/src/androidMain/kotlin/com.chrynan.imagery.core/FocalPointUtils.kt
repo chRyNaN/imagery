@@ -1,9 +1,8 @@
 @file:Suppress("unused")
 
-package com.chrynan.imagery.android
+package com.chrynan.imagery.core
 
 import android.graphics.Matrix
-import com.chrynan.imagery.core.FocalPointResolver
 import com.chrynan.imagery.core.model.FocalPoint
 
 fun Matrix.setToFocalPointResult(result: FocalPointResolver.Result) {

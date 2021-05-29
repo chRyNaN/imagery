@@ -1,4 +1,3 @@
 rootProject.name = "imagery"
 
 include ":imagery-core"
-include ":imagery-android"

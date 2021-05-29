@@ -1,12 +1,10 @@
 @file:Suppress("unused")
 
-package com.chrynan.imagery.android
+package com.chrynan.imagery.core
 
 import android.content.Context
 import android.media.MediaMetadataRetriever
 import android.net.Uri
-import com.chrynan.imagery.core.BaseUriMimeTypeResolver
-import com.chrynan.imagery.core.UriMimeTypeResolver
 
 /**
  * An Android specific implementation of [UriMimeTypeResolver].

@@ -3,13 +3,11 @@
 Components and utilities for working with images in Kotlin. <br/>
 <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/chRyNaN/imagery">
 
-Work In Progress.
-
 ## Using the library
 
 The `Image` model contains everything necessary to represent an image and all of its associated data. All the models are
 serializable with [kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization). To create an instance of
-an `Image`, a URI is required that points to the image resource. All other fields are options.
+an `Image`, a URI is required that points to the image resource. All other fields are optional.
 
 ```kotlin
 val image = Image(
@@ -118,8 +116,14 @@ repositories {
 
 ### Dependencies
 
+**Core:**
 ```groovy
 implementation "com.chrynan.imagery:imagery-core:VERSION"
+```
+
+**Android:**
+```groovy
+implementation "com.chrynan.imagery:imagery-android:VERSION"
 ```
 
 ## Documentation
