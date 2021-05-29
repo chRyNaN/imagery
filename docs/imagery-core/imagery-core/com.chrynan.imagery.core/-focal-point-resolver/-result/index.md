@@ -19,3 +19,10 @@
 | <a name="com.chrynan.imagery.core/FocalPointResolver.Result/viewHeight/#/PointingToDeclaration/"></a>[viewHeight](view-height.md)| <a name="com.chrynan.imagery.core/FocalPointResolver.Result/viewHeight/#/PointingToDeclaration/"></a> [common] val [viewHeight](view-height.md): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)   <br>|
 | <a name="com.chrynan.imagery.core/FocalPointResolver.Result/viewWidth/#/PointingToDeclaration/"></a>[viewWidth](view-width.md)| <a name="com.chrynan.imagery.core/FocalPointResolver.Result/viewWidth/#/PointingToDeclaration/"></a> [common] val [viewWidth](view-width.md): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)   <br>|
 
+
+## Extensions  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="com.chrynan.imagery.core//toMatrix/com.chrynan.imagery.core.FocalPointResolver.Result#/PointingToDeclaration/"></a>[toMatrix](../../to-matrix.md)| <a name="com.chrynan.imagery.core//toMatrix/com.chrynan.imagery.core.FocalPointResolver.Result#/PointingToDeclaration/"></a>[android]  <br>Content  <br>fun [FocalPointResolver.Result](index.md#%5Bcom.chrynan.imagery.core%2FFocalPointResolver.Result%2F%2F%2FPointingToDeclaration%2F%5D%2FExtensions%2F378157083).[toMatrix](../../to-matrix.md)(): [Matrix](https://developer.android.com/reference/kotlin/android/graphics/Matrix.html)  <br><br><br>|
+

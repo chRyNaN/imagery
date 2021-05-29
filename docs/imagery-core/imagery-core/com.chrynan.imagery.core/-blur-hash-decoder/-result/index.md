@@ -37,3 +37,10 @@ A class that is returned as a result of the [decode](../decode.md) function. Thi
 | <a name="com.chrynan.imagery.core/BlurHashDecoder.Result/punch/#/PointingToDeclaration/"></a>[punch](punch.md)| <a name="com.chrynan.imagery.core/BlurHashDecoder.Result/punch/#/PointingToDeclaration/"></a> [common] val [punch](punch.md): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)   <br>|
 | <a name="com.chrynan.imagery.core/BlurHashDecoder.Result/width/#/PointingToDeclaration/"></a>[width](width.md)| <a name="com.chrynan.imagery.core/BlurHashDecoder.Result/width/#/PointingToDeclaration/"></a> [common] val [width](width.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>|
 
+
+## Extensions  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="com.chrynan.imagery.core//toBitmap/com.chrynan.imagery.core.BlurHashDecoder.Result#/PointingToDeclaration/"></a>[toBitmap](../../to-bitmap.md)| <a name="com.chrynan.imagery.core//toBitmap/com.chrynan.imagery.core.BlurHashDecoder.Result#/PointingToDeclaration/"></a>[android]  <br>Content  <br>fun [BlurHashDecoder.Result](index.md#%5Bcom.chrynan.imagery.core%2FBlurHashDecoder.Result%2F%2F%2FPointingToDeclaration%2F%5D%2FExtensions%2F378157083).[toBitmap](../../to-bitmap.md)(): [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html)  <br><br><br>|
+

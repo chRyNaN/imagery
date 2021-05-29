@@ -14,6 +14,16 @@ Possible values are [PORTRAIT](-p-o-r-t-r-a-i-t/index.md), [LANDSCAPE](-l-a-n-d-
    
 
 
+## See also  
+  
+common  
+  
+| | |
+|---|---|
+| <a name="com.chrynan.imagery.core.model/ImageOrientation///PointingToDeclaration/"></a>[com.chrynan.imagery.core.model.Image](../-image/display-orientation.md)| <a name="com.chrynan.imagery.core.model/ImageOrientation///PointingToDeclaration/"></a>|
+  
+
+
 ## Entries  
   
 | | |
@@ -35,7 +45,7 @@ Possible values are [PORTRAIT](-p-o-r-t-r-a-i-t/index.md), [LANDSCAPE](-l-a-n-d-
   
 |  Name |  Summary | 
 |---|---|
-| <a name="com.chrynan.imagery.core.model/ImageOrientation/name/#/PointingToDeclaration/"></a>[name](index.md#%5Bcom.chrynan.imagery.core.model%2FImageOrientation%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-978021497)| <a name="com.chrynan.imagery.core.model/ImageOrientation/name/#/PointingToDeclaration/"></a> [common] val [name](index.md#%5Bcom.chrynan.imagery.core.model%2FImageOrientation%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-978021497): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>|
-| <a name="com.chrynan.imagery.core.model/ImageOrientation/ordinal/#/PointingToDeclaration/"></a>[ordinal](index.md#%5Bcom.chrynan.imagery.core.model%2FImageOrientation%2Fordinal%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-978021497)| <a name="com.chrynan.imagery.core.model/ImageOrientation/ordinal/#/PointingToDeclaration/"></a> [common] val [ordinal](index.md#%5Bcom.chrynan.imagery.core.model%2FImageOrientation%2Fordinal%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-978021497): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>|
+| <a name="com.chrynan.imagery.core.model/ImageOrientation/name/#/PointingToDeclaration/"></a>[name](index.md#%5Bcom.chrynan.imagery.core.model%2FImageOrientation%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-1687587241)| <a name="com.chrynan.imagery.core.model/ImageOrientation/name/#/PointingToDeclaration/"></a> [common] val [name](index.md#%5Bcom.chrynan.imagery.core.model%2FImageOrientation%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-1687587241): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>|
+| <a name="com.chrynan.imagery.core.model/ImageOrientation/ordinal/#/PointingToDeclaration/"></a>[ordinal](index.md#%5Bcom.chrynan.imagery.core.model%2FImageOrientation%2Fordinal%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-1687587241)| <a name="com.chrynan.imagery.core.model/ImageOrientation/ordinal/#/PointingToDeclaration/"></a> [common] val [ordinal](index.md#%5Bcom.chrynan.imagery.core.model%2FImageOrientation%2Fordinal%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-1687587241): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>|
 | <a name="com.chrynan.imagery.core.model/ImageOrientation/typeName/#/PointingToDeclaration/"></a>[typeName](type-name.md)| <a name="com.chrynan.imagery.core.model/ImageOrientation/typeName/#/PointingToDeclaration/"></a> [common] val [typeName](type-name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>|
 
