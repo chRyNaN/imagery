@@ -17,4 +17,7 @@ import kotlinx.serialization.SerialName
 data class ImageVariant(
     @SerialName(value = "name") val name: String,
     @SerialName(value = "image") val image: Image
-)
+) {
+
+    companion object
+}

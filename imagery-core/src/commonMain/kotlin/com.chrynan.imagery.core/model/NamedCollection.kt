@@ -21,5 +21,8 @@ import com.chrynan.imagery.core.util.namedSetOf
 @Serializable
 data class NamedCollection<T, C : Collection<T>>(
     @SerialName(value = "name") val name: String? = null,
-    @SerialName(value = "values") @JsonNames(names = ["elements", "variants"]) val values: C
-) : Collection<T> by values
+    @SerialName(value = "values") @JsonNames(names = ["elements", "variants", "images"]) val values: C
+) : Collection<T> by values {
+
+    companion object
+}

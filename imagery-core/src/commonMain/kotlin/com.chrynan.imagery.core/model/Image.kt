@@ -43,8 +43,8 @@ data class Image(
     @SerialName(value = "focal_point") val focalPoint: FocalPoint? = null,
     @SerialName(value = "size") val size: Size? = null,
     @SerialName(value = "density") val density: Float? = null,
-    @SerialName(value = "orientation") val orientation: ImageOrientation? = null
-    // @SerialName(value = "color_palette") val colorPalette: String? = null TODO bring in colors-palette library and add the Palette class here
+    @SerialName(value = "orientation") val orientation: ImageOrientation? = null,
+    @SerialName(value = "color_palette") val colorPalette: Palette? = null
 ) {
 
     /**
