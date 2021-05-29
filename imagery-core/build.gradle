@@ -14,7 +14,10 @@ kotlin {
     targets {
         android()
         jvm()
-        js()
+        js(LEGACY) {
+            browser()
+            nodejs()
+        }
         ios()
     }
     sourceSets {
