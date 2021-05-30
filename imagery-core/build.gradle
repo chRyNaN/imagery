@@ -14,7 +14,7 @@ kotlin {
     targets {
         android()
         jvm()
-        js(LEGACY) {
+        js(BOTH) {
             browser()
             nodejs()
         }
@@ -37,7 +37,7 @@ kotlin {
                 implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
 
                 // Colors
-                implementation "com.chrynan.colors:colors-core:0.3.0"
+                implementation "com.chrynan.colors:colors-core:0.3.1"
             }
         }
     }
