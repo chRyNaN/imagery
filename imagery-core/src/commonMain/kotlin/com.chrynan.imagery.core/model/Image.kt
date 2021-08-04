@@ -2,6 +2,8 @@
 
 package com.chrynan.imagery.core.model
 
+import com.chrynan.colors.palette.Palette
+import kotlinx.serialization.Contextual
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -44,7 +46,7 @@ data class Image(
     @SerialName(value = "size") val size: Size? = null,
     @SerialName(value = "density") val density: Float? = null,
     @SerialName(value = "orientation") val orientation: ImageOrientation? = null,
-    @SerialName(value = "color_palette") val colorPalette: Palette? = null,
+    @Contextual @SerialName(value = "color_palette") val colorPalette: Palette? = null,
     @SerialName(value = "metadata") val metadata: Metadata? = null
 ) {
 

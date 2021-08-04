@@ -1,5 +1,7 @@
 package com.chrynan.imagery.core
 
+import com.chrynan.colors.palette.Palette
+import com.chrynan.colors.palette.generate
 import com.chrynan.imagery.core.model.*
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
@@ -10,6 +12,7 @@ internal class BaseImageCreator(
     private val metadataResolver: MetadataResolver? = null
 ) : ImageCreator {
 
+    @OptIn(ExperimentalUnsignedTypes::class)
     override suspend fun create(
         uri: String,
         name: String?,
@@ -45,6 +48,7 @@ internal class BaseImageCreator(
         )
 
         // TODO calculate the Color Palette
+        val colorPalette = Palette.generate(pixels = pixels)
 
         val resolvedMimeType = mimeType ?: uriMimeTypeResolver.resolve(uri = uri)
 
@@ -62,7 +66,8 @@ internal class BaseImageCreator(
             size = Size(width = width, height = height),
             focalPoint = focalPoint,
             blurHash = deferredBlurHash.await(),
-            metadata = metadata
+            metadata = metadata,
+            colorPalette = colorPalette
         )
     }
 }
