@@ -1,11 +1,6 @@
 //[imagery-core](../../../index.md)/[com.chrynan.imagery.core](../index.md)/[AndroidMetadataResolver](index.md)/[AndroidMetadataResolver](-android-metadata-resolver.md)
 
+# AndroidMetadataResolver
 
-
-# AndroidMetadataResolver  
-[android]  
-Content  
-fun [AndroidMetadataResolver](-android-metadata-resolver.md)()  
-
-
-
+[android]\
+fun [AndroidMetadataResolver](-android-metadata-resolver.md)()

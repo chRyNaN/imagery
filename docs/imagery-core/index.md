@@ -1,15 +1,11 @@
 //[imagery-core](index.md)
 
+# imagery-core
 
+## Packages
 
-# imagery-core  
-
-
-## Packages  
-  
-|  Name | 
+| Name |
 |---|
-| <a name="com.chrynan.imagery.core////PointingToDeclaration/"></a>[com.chrynan.imagery.core](imagery-core/com.chrynan.imagery.core/index.md)|
-| <a name="com.chrynan.imagery.core.model////PointingToDeclaration/"></a>[com.chrynan.imagery.core.model](imagery-core/com.chrynan.imagery.core.model/index.md)|
-| <a name="com.chrynan.imagery.core.util////PointingToDeclaration/"></a>[com.chrynan.imagery.core.util](imagery-core/com.chrynan.imagery.core.util/index.md)|
-
+| [com.chrynan.imagery.core](imagery-core/com.chrynan.imagery.core/index.md) |
+| [com.chrynan.imagery.core.model](imagery-core/com.chrynan.imagery.core.model/index.md) |
+| [com.chrynan.imagery.core.util](imagery-core/com.chrynan.imagery.core.util/index.md) |

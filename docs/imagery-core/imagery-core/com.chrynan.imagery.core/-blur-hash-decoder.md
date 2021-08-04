@@ -1,17 +1,8 @@
 //[imagery-core](../../index.md)/[com.chrynan.imagery.core](index.md)/[BlurHashDecoder](-blur-hash-decoder.md)
 
+# BlurHashDecoder
 
-
-# BlurHashDecoder  
-[common]  
-Content  
-fun [BlurHashDecoder](-blur-hash-decoder.md)(): [BlurHashDecoder](-blur-hash-decoder/index.md)  
-More info  
-
+[common]\
+fun [BlurHashDecoder](-blur-hash-decoder.md)(): [BlurHashDecoder](-blur-hash-decoder/index.md)
 
 Creates an instance of a [BlurHashDecoder](-blur-hash-decoder/index.md).
-
-  
-
-
-

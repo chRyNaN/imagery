@@ -1,11 +1,6 @@
 //[imagery-core](../../../index.md)/[com.chrynan.imagery.core.model](../index.md)/[Image](index.md)/[orientation](orientation.md)
 
+# orientation
 
-
-# orientation  
-[common]  
-Content  
-val [orientation](orientation.md): [ImageOrientation](../-image-orientation/index.md)? = null  
-
-
-
+[common]\
+val [orientation](orientation.md): [ImageOrientation](../-image-orientation/index.md)? = null

@@ -1,11 +1,6 @@
 //[imagery-core](../../../../index.md)/[com.chrynan.imagery.core.model](../../index.md)/[ImageOrientation](../index.md)/[SQUARE](index.md)/[ordinal](ordinal.md)
 
+# ordinal
 
-
-# ordinal  
-[common]  
-Content  
-val [ordinal](ordinal.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
-
-
-
+[common]\
+val [ordinal](ordinal.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
